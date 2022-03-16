@@ -58,7 +58,7 @@ while True:
             request = requests.get(url, timeout=timeout)
             print("Connected to the Internet.")
             client = pymongo.MongoClient(
-                "mongodb+srv://Diamond:HatsuneMiku39@cluster0.nrs4u.mongodb.net/Cluster0?retryWrites=true&w=majority",
+                "mongodb+srv://username:password@cluster0.nrs4u.mongodb.net/Cluster0?retryWrites=true&w=majority",
                 tlsCAFile=ca)
             db = client.get_database('PJTwo')
 
